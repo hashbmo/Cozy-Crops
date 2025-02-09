@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+</head>
+<body>
+    <div id="MenuUI">
+        <h1 class="horizontal_center">Cozy Crops</h1>
+        <div id="MenuBtns">
+            <button name="Start" class="MenuBtn">Start</button>
+        </div>
+    </div>
+    <canvas class="center" width="500" height="500" id="GameCanvas"></canvas>
+    <div class="GameUI">
+        <div class="GameBtns">
+            <button>Marketplace</button>
+            <button>Inventory</button>
+        </div>
+        <div id="Inventory">
+            
+        </div>
+    </div>
+    <script type="module" src="{{url_for('static', filename='main.js')}}"></script>
+</body>

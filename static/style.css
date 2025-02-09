@@ -1,0 +1,88 @@
+.center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.horizontal_center {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translate(-50%, 50%);
+    transform: translate(-50%, 50%)
+}
+
+.vertical_center {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%)
+}
+
+#MenuBtns {
+    display: grid;
+    gap: 0.2vw 0.2vw;
+    grid-auto-flow: row;
+    justify-content: center;
+    align-content: center;
+}
+
+.MenuBtn {
+    
+}
+
+#GameCanvas {
+    width: 70vh;
+    height: 70vh;
+}
+
+#GameBtns {
+    display: grid;
+    grid-template-columns: 10vw 10vw;
+    position: fixed;
+    left: 50%;
+    bottom: 20px;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+}
+
+#MenuUI {
+    display: block; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 2; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0); /* Black w/ opacity */
+}
+
+#GameUI {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0); /* Black w/ opacity */
+}
+
+#Inventory {
+    background-color: #eed9c4;
+    position: absolute;
+    width: 20vw;
+    height: 75vw;
+    right: 0px;
+}
+
+#Marketplace {
+    background-color: #eed9c4;
+    position: absolute;
+    width: 20vw;
+    height: 75vw;
+    left: 0px;
+}
